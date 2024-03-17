@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./SearchBar.css";
 
 export default function SearchBar({ getTerm }) {
   // Controlled Form Input
@@ -20,13 +21,16 @@ export default function SearchBar({ getTerm }) {
   };
 
   return (
-    <div>
+    <div className="search-bar">
       <form onSubmit={handleSubmit}>
+        <label htmlFor="term">Search an Image</label>
+
         <input
           type="text"
           name="term"
           onChange={handleInput}
           value={term}
+          id="term"
         />
 
         <button type="submit">Submit</button>

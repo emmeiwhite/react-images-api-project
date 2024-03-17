@@ -1,0 +1,16 @@
+body {
+  padding: 1rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.images-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.images-gallery img {
+  /* max-width: 300px; */
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
